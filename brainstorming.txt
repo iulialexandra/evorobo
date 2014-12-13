@@ -8,3 +8,8 @@
 # Anything goes!!!!! No need for elaborated ideas!
 
 
+- Evolve some kind of braitenberg vehicle: evolve type and position of sensors/motors (body) and at the same time
+  evolve the connections between these elements (control algorithm). Then let them perform some kind of task: a race maybe
+  or a maze, or avoiding obstacles, or a fighting arena. 
+
+
