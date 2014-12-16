@@ -12,4 +12,8 @@
   evolve the connections between these elements (control algorithm). Then let them perform some kind of task: a race maybe
   or a maze, or avoiding obstacles, or a fighting arena. 
 
+Use 3 vehicles at the same time: the first one for evolving first the body, the second for evolving the control algorithm and the last one for evolving both aspects at the same time. 
 
+Also use more than one task, one in which is more important have a good configuration for the motors, like it would be a race, and another one where the control is more important, like avoiding the obstacles or the maze.
+
+- Evolve walking robots, really simple robots, just a cube with legs, where evolving the body would be changing the number of legs, the number of motors per leg and changing the sensors (mabye), and evolving the mind would be changing the control algorithm. A good test mabye would be try to walk on irregular floor, or over some kind of inclined floor, or mabye try to go up a ladder with just a couple of steps.  
