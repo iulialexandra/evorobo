@@ -1,0 +1,226 @@
+{
+ "id": 1,
+ "body": {
+  "connection": [
+   {
+    "src": "CoreComponent",
+    "srcSlot": 0,
+    "dest": "myid1001",
+    "destSlot": 0
+   },
+   {
+    "src": "myid1001",
+    "srcSlot": 1,
+    "dest": "myid1004",
+    "destSlot": 0
+   },
+   {
+    "src": "myid1004",
+    "srcSlot": 1,
+    "dest": "myid1000",
+    "destSlot": 0
+   },
+   {
+    "src": "CoreComponent",
+    "srcSlot": 1,
+    "dest": "myid1005",
+    "destSlot": 0
+   },
+   {
+    "src": "myid1005",
+    "srcSlot": 1,
+    "dest": "myid1006",
+    "destSlot": 0
+   },
+   {
+    "src": "myid1006",
+    "srcSlot": 1,
+    "dest": "myid1007",
+    "destSlot": 0
+   },
+   {
+    "src": "CoreComponent",
+    "srcSlot": 4,
+    "dest": "myid1002",
+    "destSlot": 0
+   }
+  ],
+  "part": [
+   {
+    "id": "CoreComponent",
+    "type": "CoreComponent",
+    "root": true,
+    "orientation": 0
+   },
+   {
+    "id": "myid1001",
+    "type": "ParametricJoint",
+    "evolvableParam": [
+     {
+      "paramValue": 0.069922395050525665
+     },
+     {
+      "paramValue": 87.9949951171875
+     },
+     {
+      "paramValue": 118.9144287109375
+     }
+    ],
+    "root": false,
+    "orientation": 3
+   },
+   {
+    "id": "myid1004",
+    "type": "PassiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "myid1000",
+    "type": "PassiveWheel",
+    "evolvableParam": [
+     {
+      "paramValue": 0.056658264249563217
+     }
+    ],
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "myid1005",
+    "type": "ParametricJoint",
+    "evolvableParam": [
+     {
+      "paramValue": 0.069922395050525665
+     },
+     {
+      "paramValue": 87.9949951171875
+     },
+     {
+      "paramValue": 118.9144287109375
+     }
+    ],
+    "root": false,
+    "orientation": 3
+   },
+   {
+    "id": "myid1006",
+    "type": "PassiveHinge",
+    "root": false,
+    "orientation": 2
+   },
+   {
+    "id": "myid1007",
+    "type": "PassiveWheel",
+    "evolvableParam": [
+     {
+      "paramValue": 0.056658264249563217
+     }
+    ],
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "id": "myid1002",
+    "type": "ActiveWheg",
+    "evolvableParam": [
+     {
+      "paramValue": 0.052306726574897766
+     }
+    ],
+    "root": false,
+    "orientation": 1
+   }
+  ]
+ },
+ "brain": {
+  "neuron": [
+   {
+    "bodyPartId": "CoreComponent",
+    "id": "CoreComponent-0",
+    "layer": "input",
+    "ioId": 0,
+    "biasWeight": 2.1175580024719238
+   },
+   {
+    "bodyPartId": "CoreComponent",
+    "id": "CoreComponent-1",
+    "layer": "input",
+    "ioId": 1,
+    "biasWeight": 0.19329464435577393
+   },
+   {
+    "bodyPartId": "CoreComponent",
+    "id": "CoreComponent-2",
+    "layer": "input",
+    "ioId": 2,
+    "biasWeight": 0.15114589035511017
+   },
+   {
+    "bodyPartId": "CoreComponent",
+    "id": "CoreComponent-3",
+    "layer": "input",
+    "ioId": 3,
+    "biasWeight": 0.83219188451766968
+   },
+   {
+    "bodyPartId": "CoreComponent",
+    "id": "CoreComponent-4",
+    "layer": "input",
+    "ioId": 4,
+    "biasWeight": -2.3026902675628662
+   },
+   {
+    "bodyPartId": "CoreComponent",
+    "id": "CoreComponent-5",
+    "layer": "input",
+    "ioId": 5,
+    "biasWeight": 0.19134388864040375
+   },
+   {
+    "bodyPartId": "myid1002",
+    "id": "myid1002-0",
+    "layer": "output",
+    "ioId": 0,
+    "biasWeight": -0.18069778382778168
+   }
+  ],
+  "connection": [
+   {
+    "weight": 0.59985065460205078,
+    "src": "CoreComponent-0",
+    "dest": "myid1002-0"
+   },
+   {
+    "weight": 0.3839917778968811,
+    "src": "CoreComponent-1",
+    "dest": "myid1002-0"
+   },
+   {
+    "weight": 0.0042682741768658161,
+    "src": "CoreComponent-2",
+    "dest": "myid1002-0"
+   },
+   {
+    "weight": 1.0152610540390015,
+    "src": "CoreComponent-3",
+    "dest": "myid1002-0"
+   },
+   {
+    "weight": -1.2641370296478271,
+    "src": "CoreComponent-4",
+    "dest": "myid1002-0"
+   },
+   {
+    "weight": 0.36455601453781128,
+    "src": "CoreComponent-5",
+    "dest": "myid1002-0"
+   },
+   {
+    "weight": -0.98720169067382813,
+    "src": "myid1002-0",
+    "dest": "myid1002-0"
+   }
+  ]
+ }
+}
