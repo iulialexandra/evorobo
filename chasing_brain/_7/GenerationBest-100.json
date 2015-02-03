@@ -1,0 +1,232 @@
+{
+ "brain": {
+  "neuron": [
+   {
+    "id": "Core-0",
+    "layer": "input",
+    "biasWeight": 0.0,
+    "bodyPartId": "Core",
+    "ioId": 0
+   },
+   {
+    "id": "Core-1",
+    "layer": "input",
+    "biasWeight": 0.040951799601316452,
+    "bodyPartId": "Core",
+    "ioId": 1
+   },
+   {
+    "id": "Core-2",
+    "layer": "input",
+    "biasWeight": -0.70944148302078247,
+    "bodyPartId": "Core",
+    "ioId": 2
+   },
+   {
+    "id": "Core-3",
+    "layer": "input",
+    "biasWeight": 1.4848920106887817,
+    "bodyPartId": "Core",
+    "ioId": 3
+   },
+   {
+    "id": "Core-4",
+    "layer": "input",
+    "biasWeight": -1.1381739377975464,
+    "bodyPartId": "Core",
+    "ioId": 4
+   },
+   {
+    "id": "Core-5",
+    "layer": "input",
+    "biasWeight": 1.4556851387023926,
+    "bodyPartId": "Core",
+    "ioId": 5
+   },
+   {
+    "id": "L1-0",
+    "layer": "input",
+    "biasWeight": -0.56240850687026978,
+    "bodyPartId": "L1",
+    "ioId": 0
+   },
+   {
+    "id": "LeftWheel-0",
+    "layer": "output",
+    "biasWeight": -2.8441882133483887,
+    "bodyPartId": "LeftWheel",
+    "ioId": 0
+   },
+   {
+    "id": "RightWheel-0",
+    "layer": "output",
+    "biasWeight": 0.62212419509887695,
+    "bodyPartId": "RightWheel",
+    "ioId": 0
+   }
+  ],
+  "connection": [
+   {
+    "dest": "LeftWheel-0",
+    "src": "Core-0",
+    "weight": -0.10571625828742981
+   },
+   {
+    "dest": "RightWheel-0",
+    "src": "Core-0",
+    "weight": -0.081161953508853912
+   },
+   {
+    "dest": "LeftWheel-0",
+    "src": "Core-1",
+    "weight": 0.35259369015693665
+   },
+   {
+    "dest": "RightWheel-0",
+    "src": "Core-1",
+    "weight": 0.045843034982681274
+   },
+   {
+    "dest": "LeftWheel-0",
+    "src": "Core-2",
+    "weight": 0.51991158723831177
+   },
+   {
+    "dest": "RightWheel-0",
+    "src": "Core-2",
+    "weight": 0.041622593998908997
+   },
+   {
+    "dest": "LeftWheel-0",
+    "src": "Core-3",
+    "weight": 0.086745202541351318
+   },
+   {
+    "dest": "RightWheel-0",
+    "src": "Core-3",
+    "weight": 0.035758189857006073
+   },
+   {
+    "dest": "LeftWheel-0",
+    "src": "Core-4",
+    "weight": 0.84728556871414185
+   },
+   {
+    "dest": "RightWheel-0",
+    "src": "Core-4",
+    "weight": 0.96797239780426025
+   },
+   {
+    "dest": "LeftWheel-0",
+    "src": "Core-5",
+    "weight": 0.36743828654289246
+   },
+   {
+    "dest": "RightWheel-0",
+    "src": "Core-5",
+    "weight": 0.25268319249153137
+   },
+   {
+    "dest": "LeftWheel-0",
+    "src": "L1-0",
+    "weight": 0.16418413817882538
+   },
+   {
+    "dest": "RightWheel-0",
+    "src": "L1-0",
+    "weight": 0.44749659299850464
+   },
+   {
+    "dest": "LeftWheel-0",
+    "src": "LeftWheel-0",
+    "weight": -0.55852383375167847
+   },
+   {
+    "dest": "RightWheel-0",
+    "src": "LeftWheel-0",
+    "weight": -1.7497860193252563
+   },
+   {
+    "dest": "LeftWheel-0",
+    "src": "RightWheel-0",
+    "weight": 0.78645974397659302
+   },
+   {
+    "dest": "RightWheel-0",
+    "src": "RightWheel-0",
+    "weight": 0.20001892745494843
+   }
+  ]
+ },
+ "id": 1,
+ "body": {
+  "part": [
+   {
+    "orientation": 0,
+    "id": "Core",
+    "type": "CoreComponent",
+    "root": true
+   },
+   {
+    "orientation": 0,
+    "id": "Brick",
+    "type": "FixedBrick",
+    "root": false
+   },
+   {
+    "orientation": 0,
+    "id": "L1",
+    "type": "LightSensor",
+    "root": false
+   },
+   {
+    "orientation": 0,
+    "id": "RightWheel",
+    "type": "ActiveWheel",
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.079999998211860657
+     }
+    ]
+   },
+   {
+    "orientation": 0,
+    "id": "LeftWheel",
+    "type": "ActiveWheel",
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.079999998211860657
+     }
+    ]
+   }
+  ],
+  "connection": [
+   {
+    "dest": "Brick",
+    "src": "Core",
+    "srcSlot": 3,
+    "destSlot": 0
+   },
+   {
+    "dest": "L1",
+    "src": "Brick",
+    "srcSlot": 4,
+    "destSlot": 0
+   },
+   {
+    "dest": "RightWheel",
+    "src": "Core",
+    "srcSlot": 4,
+    "destSlot": 0
+   },
+   {
+    "dest": "LeftWheel",
+    "src": "Core",
+    "srcSlot": 5,
+    "destSlot": 0
+   }
+  ]
+ }
+}

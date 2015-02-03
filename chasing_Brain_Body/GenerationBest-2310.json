@@ -1,0 +1,249 @@
+{
+ "id": 1,
+ "brain": {
+  "neuron": [
+   {
+    "ioId": 0,
+    "biasWeight": 0.11167427897453308,
+    "id": "CoreComponent-0",
+    "bodyPartId": "CoreComponent",
+    "layer": "input"
+   },
+   {
+    "ioId": 1,
+    "biasWeight": 0.51700717210769653,
+    "id": "CoreComponent-1",
+    "bodyPartId": "CoreComponent",
+    "layer": "input"
+   },
+   {
+    "ioId": 2,
+    "biasWeight": 0.4195745587348938,
+    "id": "CoreComponent-2",
+    "bodyPartId": "CoreComponent",
+    "layer": "input"
+   },
+   {
+    "ioId": 3,
+    "biasWeight": 0.48419502377510071,
+    "id": "CoreComponent-3",
+    "bodyPartId": "CoreComponent",
+    "layer": "input"
+   },
+   {
+    "ioId": 4,
+    "biasWeight": 0.21710461378097534,
+    "id": "CoreComponent-4",
+    "bodyPartId": "CoreComponent",
+    "layer": "input"
+   },
+   {
+    "ioId": 5,
+    "biasWeight": 0.38181105256080627,
+    "id": "CoreComponent-5",
+    "bodyPartId": "CoreComponent",
+    "layer": "input"
+   },
+   {
+    "ioId": 0,
+    "biasWeight": 0.026299864053726196,
+    "id": "myid1001-0",
+    "bodyPartId": "myid1001",
+    "layer": "output"
+   },
+   {
+    "ioId": 0,
+    "biasWeight": -0.54702067375183105,
+    "id": "myid1013-0",
+    "bodyPartId": "myid1013",
+    "layer": "input"
+   },
+   {
+    "ioId": 0,
+    "biasWeight": -0.038043931126594543,
+    "id": "myid1015-0",
+    "bodyPartId": "myid1015",
+    "layer": "output"
+   },
+   {
+    "ioId": 0,
+    "biasWeight": -0.1187160313129425,
+    "id": "myid1036-0",
+    "bodyPartId": "myid1036",
+    "layer": "input"
+   }
+  ],
+  "connection": [
+   {
+    "src": "CoreComponent-0",
+    "dest": "myid1001-0",
+    "weight": 0.11891952157020569
+   },
+   {
+    "src": "CoreComponent-0",
+    "dest": "myid1015-0",
+    "weight": -0.067233465611934662
+   },
+   {
+    "src": "CoreComponent-1",
+    "dest": "myid1001-0",
+    "weight": -0.078038714826107025
+   },
+   {
+    "src": "CoreComponent-1",
+    "dest": "myid1015-0",
+    "weight": -0.023843318223953247
+   },
+   {
+    "src": "CoreComponent-2",
+    "dest": "myid1001-0",
+    "weight": 0.045498069375753403
+   },
+   {
+    "src": "CoreComponent-2",
+    "dest": "myid1015-0",
+    "weight": 0.0
+   },
+   {
+    "src": "CoreComponent-3",
+    "dest": "myid1001-0",
+    "weight": -0.0037947469390928745
+   },
+   {
+    "src": "CoreComponent-3",
+    "dest": "myid1015-0",
+    "weight": 0.14796684682369232
+   },
+   {
+    "src": "CoreComponent-4",
+    "dest": "myid1001-0",
+    "weight": -0.020372239872813225
+   },
+   {
+    "src": "CoreComponent-4",
+    "dest": "myid1015-0",
+    "weight": 0.03626999631524086
+   },
+   {
+    "src": "CoreComponent-5",
+    "dest": "myid1001-0",
+    "weight": 0.073103241622447968
+   },
+   {
+    "src": "CoreComponent-5",
+    "dest": "myid1015-0",
+    "weight": 0.022515397518873215
+   },
+   {
+    "src": "myid1001-0",
+    "dest": "myid1001-0",
+    "weight": -0.089674949645996094
+   },
+   {
+    "src": "myid1001-0",
+    "dest": "myid1015-0",
+    "weight": -0.10578460246324539
+   },
+   {
+    "src": "myid1013-0",
+    "dest": "myid1001-0",
+    "weight": 0.032625578343868256
+   },
+   {
+    "src": "myid1013-0",
+    "dest": "myid1015-0",
+    "weight": 0.94177883863449097
+   },
+   {
+    "src": "myid1015-0",
+    "dest": "myid1001-0",
+    "weight": -0.091633617877960205
+   },
+   {
+    "src": "myid1015-0",
+    "dest": "myid1015-0",
+    "weight": 0.22927245497703552
+   },
+   {
+    "src": "myid1036-0",
+    "dest": "myid1001-0",
+    "weight": -0.064626835286617279
+   },
+   {
+    "src": "myid1036-0",
+    "dest": "myid1015-0",
+    "weight": 1.0769767761230469
+   }
+  ]
+ },
+ "body": {
+  "part": [
+   {
+    "type": "CoreComponent",
+    "id": "CoreComponent",
+    "root": true,
+    "orientation": 1
+   },
+   {
+    "type": "ActiveWheel",
+    "id": "myid1001",
+    "evolvableParam": [
+     {
+      "paramValue": 0.075429774820804596
+     }
+    ],
+    "root": false,
+    "orientation": 3
+   },
+   {
+    "type": "LightSensor",
+    "id": "myid1036",
+    "root": false,
+    "orientation": 1
+   },
+   {
+    "type": "ActiveWheg",
+    "id": "myid1015",
+    "evolvableParam": [
+     {
+      "paramValue": 0.032505590468645096
+     }
+    ],
+    "root": false,
+    "orientation": 3
+   },
+   {
+    "type": "LightSensor",
+    "id": "myid1013",
+    "root": false,
+    "orientation": 3
+   }
+  ],
+  "connection": [
+   {
+    "destSlot": 0,
+    "src": "CoreComponent",
+    "dest": "myid1001",
+    "srcSlot": 0
+   },
+   {
+    "destSlot": 0,
+    "src": "CoreComponent",
+    "dest": "myid1036",
+    "srcSlot": 1
+   },
+   {
+    "destSlot": 0,
+    "src": "CoreComponent",
+    "dest": "myid1015",
+    "srcSlot": 4
+   },
+   {
+    "destSlot": 0,
+    "src": "CoreComponent",
+    "dest": "myid1013",
+    "srcSlot": 5
+   }
+  ]
+ }
+}

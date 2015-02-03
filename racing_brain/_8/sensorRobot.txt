@@ -1,0 +1,10 @@
+0 E Core 0
+	2 F Brick 2
+		1 L L1 0
+		2 L L2 3
+	5 G LeftWheg 0 0.03
+	4 G RightWheg 0 0.03
+
+
+LeftWheg 0 1
+RightWheg 0 -1

@@ -1,0 +1,203 @@
+{
+ "id": 1,
+ "body": {
+  "part": [
+   {
+    "type": "CoreComponent",
+    "id": "Core",
+    "orientation": 0,
+    "root": true
+   },
+   {
+    "type": "FixedBrick",
+    "id": "Brick",
+    "orientation": 0,
+    "root": false
+   },
+   {
+    "type": "ActiveWheg",
+    "id": "RightWheg",
+    "orientation": 0,
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.029999999329447746
+     }
+    ]
+   },
+   {
+    "type": "ActiveWheg",
+    "id": "LeftWheg",
+    "orientation": 0,
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.029999999329447746
+     }
+    ]
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core",
+    "destSlot": 0,
+    "dest": "Brick",
+    "srcSlot": 0
+   },
+   {
+    "src": "Core",
+    "destSlot": 0,
+    "dest": "RightWheg",
+    "srcSlot": 4
+   },
+   {
+    "src": "Core",
+    "destSlot": 0,
+    "dest": "LeftWheg",
+    "srcSlot": 5
+   }
+  ]
+ },
+ "brain": {
+  "neuron": [
+   {
+    "bodyPartId": "Core",
+    "id": "Core-0",
+    "layer": "input",
+    "biasWeight": 1.6281672716140747,
+    "ioId": 0
+   },
+   {
+    "bodyPartId": "Core",
+    "id": "Core-1",
+    "layer": "input",
+    "biasWeight": -0.32252410054206848,
+    "ioId": 1
+   },
+   {
+    "bodyPartId": "Core",
+    "id": "Core-2",
+    "layer": "input",
+    "biasWeight": -0.76927536725997925,
+    "ioId": 2
+   },
+   {
+    "bodyPartId": "Core",
+    "id": "Core-3",
+    "layer": "input",
+    "biasWeight": -2.7051017284393311,
+    "ioId": 3
+   },
+   {
+    "bodyPartId": "Core",
+    "id": "Core-4",
+    "layer": "input",
+    "biasWeight": -0.07243657112121582,
+    "ioId": 4
+   },
+   {
+    "bodyPartId": "Core",
+    "id": "Core-5",
+    "layer": "input",
+    "biasWeight": -1.6657530069351196,
+    "ioId": 5
+   },
+   {
+    "bodyPartId": "LeftWheg",
+    "id": "LeftWheg-0",
+    "layer": "output",
+    "biasWeight": -0.7864043116569519,
+    "ioId": 0
+   },
+   {
+    "bodyPartId": "RightWheg",
+    "id": "RightWheg-0",
+    "layer": "output",
+    "biasWeight": -2.8412761688232422,
+    "ioId": 0
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core-0",
+    "dest": "LeftWheg-0",
+    "weight": 0.18624402582645416
+   },
+   {
+    "src": "Core-0",
+    "dest": "RightWheg-0",
+    "weight": 1.5971566438674927
+   },
+   {
+    "src": "Core-1",
+    "dest": "LeftWheg-0",
+    "weight": -2.9729664325714111
+   },
+   {
+    "src": "Core-1",
+    "dest": "RightWheg-0",
+    "weight": 3.0
+   },
+   {
+    "src": "Core-2",
+    "dest": "LeftWheg-0",
+    "weight": -3.0
+   },
+   {
+    "src": "Core-2",
+    "dest": "RightWheg-0",
+    "weight": 0.046318523585796356
+   },
+   {
+    "src": "Core-3",
+    "dest": "LeftWheg-0",
+    "weight": -2.3716282844543457
+   },
+   {
+    "src": "Core-3",
+    "dest": "RightWheg-0",
+    "weight": -3.0
+   },
+   {
+    "src": "Core-4",
+    "dest": "LeftWheg-0",
+    "weight": 2.8448460102081299
+   },
+   {
+    "src": "Core-4",
+    "dest": "RightWheg-0",
+    "weight": -1.6660382747650146
+   },
+   {
+    "src": "Core-5",
+    "dest": "LeftWheg-0",
+    "weight": 2.1586523056030273
+   },
+   {
+    "src": "Core-5",
+    "dest": "RightWheg-0",
+    "weight": 1.5775301456451416
+   },
+   {
+    "src": "LeftWheg-0",
+    "dest": "LeftWheg-0",
+    "weight": 3.0
+   },
+   {
+    "src": "LeftWheg-0",
+    "dest": "RightWheg-0",
+    "weight": -0.51250088214874268
+   },
+   {
+    "src": "RightWheg-0",
+    "dest": "LeftWheg-0",
+    "weight": -2.8386430740356445
+   },
+   {
+    "src": "RightWheg-0",
+    "dest": "RightWheg-0",
+    "weight": -0.63943290710449219
+   }
+  ]
+ }
+}

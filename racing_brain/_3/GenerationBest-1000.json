@@ -1,0 +1,191 @@
+{
+ "brain": {
+  "neuron": [
+   {
+    "id": "Core-0",
+    "layer": "input",
+    "biasWeight": 2.5233206748962402,
+    "ioId": 0,
+    "bodyPartId": "Core"
+   },
+   {
+    "id": "Core-1",
+    "layer": "input",
+    "biasWeight": -1.1316245794296265,
+    "ioId": 1,
+    "bodyPartId": "Core"
+   },
+   {
+    "id": "Core-2",
+    "layer": "input",
+    "biasWeight": -1.0262025594711304,
+    "ioId": 2,
+    "bodyPartId": "Core"
+   },
+   {
+    "id": "Core-3",
+    "layer": "input",
+    "biasWeight": 0.17018780112266541,
+    "ioId": 3,
+    "bodyPartId": "Core"
+   },
+   {
+    "id": "Core-4",
+    "layer": "input",
+    "biasWeight": -3.0,
+    "ioId": 4,
+    "bodyPartId": "Core"
+   },
+   {
+    "id": "Core-5",
+    "layer": "input",
+    "biasWeight": 1.2506366968154907,
+    "ioId": 5,
+    "bodyPartId": "Core"
+   },
+   {
+    "id": "LeftWheg-0",
+    "layer": "output",
+    "biasWeight": -1.9020121097564697,
+    "ioId": 0,
+    "bodyPartId": "LeftWheg"
+   },
+   {
+    "id": "RightWheg-0",
+    "layer": "output",
+    "biasWeight": 1.9886077642440796,
+    "ioId": 0,
+    "bodyPartId": "RightWheg"
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core-0",
+    "dest": "LeftWheg-0",
+    "weight": -2.3256049156188965
+   },
+   {
+    "src": "Core-0",
+    "dest": "RightWheg-0",
+    "weight": 2.0689282417297363
+   },
+   {
+    "src": "Core-1",
+    "dest": "LeftWheg-0",
+    "weight": -2.3231046199798584
+   },
+   {
+    "src": "Core-1",
+    "dest": "RightWheg-0",
+    "weight": -0.39591759443283081
+   },
+   {
+    "src": "Core-2",
+    "dest": "LeftWheg-0",
+    "weight": 3.0
+   },
+   {
+    "src": "Core-2",
+    "dest": "RightWheg-0",
+    "weight": 1.1306658983230591
+   },
+   {
+    "src": "Core-3",
+    "dest": "LeftWheg-0",
+    "weight": 0.017608491703867912
+   },
+   {
+    "src": "Core-3",
+    "dest": "RightWheg-0",
+    "weight": -0.41685506701469421
+   },
+   {
+    "src": "Core-4",
+    "dest": "LeftWheg-0",
+    "weight": 1.6509189605712891
+   },
+   {
+    "src": "Core-4",
+    "dest": "RightWheg-0",
+    "weight": 0.39030489325523376
+   },
+   {
+    "src": "Core-5",
+    "dest": "LeftWheg-0",
+    "weight": -3.0
+   },
+   {
+    "src": "Core-5",
+    "dest": "RightWheg-0",
+    "weight": 0.37657347321510315
+   },
+   {
+    "src": "LeftWheg-0",
+    "dest": "LeftWheg-0",
+    "weight": 0.82965701818466187
+   },
+   {
+    "src": "LeftWheg-0",
+    "dest": "RightWheg-0",
+    "weight": -1.8630412817001343
+   },
+   {
+    "src": "RightWheg-0",
+    "dest": "LeftWheg-0",
+    "weight": 2.2834198474884033
+   },
+   {
+    "src": "RightWheg-0",
+    "dest": "RightWheg-0",
+    "weight": -3.0
+   }
+  ]
+ },
+ "body": {
+  "part": [
+   {
+    "id": "Core",
+    "type": "CoreComponent",
+    "root": true,
+    "orientation": 0
+   },
+   {
+    "id": "RightWheg",
+    "type": "ActiveWheg",
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.029999999329447746
+     }
+    ],
+    "orientation": 0
+   },
+   {
+    "id": "LeftWheg",
+    "type": "ActiveWheg",
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.029999999329447746
+     }
+    ],
+    "orientation": 0
+   }
+  ],
+  "connection": [
+   {
+    "srcSlot": 4,
+    "src": "Core",
+    "dest": "RightWheg",
+    "destSlot": 0
+   },
+   {
+    "srcSlot": 5,
+    "src": "Core",
+    "dest": "LeftWheg",
+    "destSlot": 0
+   }
+  ]
+ },
+ "id": 1
+}

@@ -1,0 +1,12 @@
+0 E Core 0
+	2 F Brick 2
+		1 L L1 0
+		2 L L2 0
+		3 L L3 0
+		4 L L4 0
+	5 J LeftWheel 0 0.05
+	4 J RightWheel 0 0.05
+
+
+LeftWheel 0 1
+RightWheel 0 -1

@@ -1,0 +1,261 @@
+{
+ "id": 1,
+ "body": {
+  "part": [
+   {
+    "id": "Core",
+    "type": "CoreComponent",
+    "orientation": 0,
+    "root": true
+   },
+   {
+    "id": "Brick",
+    "type": "FixedBrick",
+    "orientation": 2,
+    "root": false
+   },
+   {
+    "id": "L1",
+    "type": "LightSensor",
+    "orientation": 0,
+    "root": false
+   },
+   {
+    "id": "L2",
+    "type": "LightSensor",
+    "orientation": 3,
+    "root": false
+   },
+   {
+    "id": "RightWheel",
+    "type": "ActiveWheel",
+    "orientation": 0,
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.029999999329447746
+     }
+    ]
+   },
+   {
+    "id": "LeftWheel",
+    "type": "ActiveWheel",
+    "orientation": 0,
+    "root": false,
+    "evolvableParam": [
+     {
+      "paramValue": 0.029999999329447746
+     }
+    ]
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core",
+    "dest": "Brick",
+    "destSlot": 0,
+    "srcSlot": 2
+   },
+   {
+    "src": "Brick",
+    "dest": "L1",
+    "destSlot": 0,
+    "srcSlot": 2
+   },
+   {
+    "src": "Brick",
+    "dest": "L2",
+    "destSlot": 0,
+    "srcSlot": 3
+   },
+   {
+    "src": "Core",
+    "dest": "RightWheel",
+    "destSlot": 0,
+    "srcSlot": 4
+   },
+   {
+    "src": "Core",
+    "dest": "LeftWheel",
+    "destSlot": 0,
+    "srcSlot": 5
+   }
+  ]
+ },
+ "brain": {
+  "neuron": [
+   {
+    "id": "Core-0",
+    "layer": "input",
+    "biasWeight": 0.0,
+    "bodyPartId": "Core",
+    "ioId": 0
+   },
+   {
+    "id": "Core-1",
+    "layer": "input",
+    "biasWeight": -0.51352781057357788,
+    "bodyPartId": "Core",
+    "ioId": 1
+   },
+   {
+    "id": "Core-2",
+    "layer": "input",
+    "biasWeight": -0.68924665451049805,
+    "bodyPartId": "Core",
+    "ioId": 2
+   },
+   {
+    "id": "Core-3",
+    "layer": "input",
+    "biasWeight": 0.52447938919067383,
+    "bodyPartId": "Core",
+    "ioId": 3
+   },
+   {
+    "id": "Core-4",
+    "layer": "input",
+    "biasWeight": 0.036997638642787933,
+    "bodyPartId": "Core",
+    "ioId": 4
+   },
+   {
+    "id": "Core-5",
+    "layer": "input",
+    "biasWeight": 2.0765364170074463,
+    "bodyPartId": "Core",
+    "ioId": 5
+   },
+   {
+    "id": "L1-0",
+    "layer": "input",
+    "biasWeight": 0.59666740894317627,
+    "bodyPartId": "L1",
+    "ioId": 0
+   },
+   {
+    "id": "L2-0",
+    "layer": "input",
+    "biasWeight": -1.3468631505966187,
+    "bodyPartId": "L2",
+    "ioId": 0
+   },
+   {
+    "id": "LeftWheel-0",
+    "layer": "output",
+    "biasWeight": -1.9828592538833618,
+    "bodyPartId": "LeftWheel",
+    "ioId": 0
+   },
+   {
+    "id": "RightWheel-0",
+    "layer": "output",
+    "biasWeight": 1.4960098266601562,
+    "bodyPartId": "RightWheel",
+    "ioId": 0
+   }
+  ],
+  "connection": [
+   {
+    "src": "Core-0",
+    "dest": "LeftWheel-0",
+    "weight": -0.31630948185920715
+   },
+   {
+    "src": "Core-0",
+    "dest": "RightWheel-0",
+    "weight": -0.6616169810295105
+   },
+   {
+    "src": "Core-1",
+    "dest": "LeftWheel-0",
+    "weight": -0.36749449372291565
+   },
+   {
+    "src": "Core-1",
+    "dest": "RightWheel-0",
+    "weight": 0.68898522853851318
+   },
+   {
+    "src": "Core-2",
+    "dest": "LeftWheel-0",
+    "weight": 2.0386178493499756
+   },
+   {
+    "src": "Core-2",
+    "dest": "RightWheel-0",
+    "weight": 0.41811493039131165
+   },
+   {
+    "src": "Core-3",
+    "dest": "LeftWheel-0",
+    "weight": 1.845860481262207
+   },
+   {
+    "src": "Core-3",
+    "dest": "RightWheel-0",
+    "weight": 0.93925529718399048
+   },
+   {
+    "src": "Core-4",
+    "dest": "LeftWheel-0",
+    "weight": -0.83230710029602051
+   },
+   {
+    "src": "Core-4",
+    "dest": "RightWheel-0",
+    "weight": 1.706663966178894
+   },
+   {
+    "src": "Core-5",
+    "dest": "LeftWheel-0",
+    "weight": 2.7646176815032959
+   },
+   {
+    "src": "Core-5",
+    "dest": "RightWheel-0",
+    "weight": -2.1756775379180908
+   },
+   {
+    "src": "L1-0",
+    "dest": "LeftWheel-0",
+    "weight": -0.48104315996170044
+   },
+   {
+    "src": "L1-0",
+    "dest": "RightWheel-0",
+    "weight": 3.0
+   },
+   {
+    "src": "L2-0",
+    "dest": "LeftWheel-0",
+    "weight": 0.22017715871334076
+   },
+   {
+    "src": "L2-0",
+    "dest": "RightWheel-0",
+    "weight": -1.8622792959213257
+   },
+   {
+    "src": "LeftWheel-0",
+    "dest": "LeftWheel-0",
+    "weight": 1.1680878400802612
+   },
+   {
+    "src": "LeftWheel-0",
+    "dest": "RightWheel-0",
+    "weight": -0.20940138399600983
+   },
+   {
+    "src": "RightWheel-0",
+    "dest": "LeftWheel-0",
+    "weight": -1.4165729284286499
+   },
+   {
+    "src": "RightWheel-0",
+    "dest": "RightWheel-0",
+    "weight": -0.28516244888305664
+   }
+  ]
+ }
+}
