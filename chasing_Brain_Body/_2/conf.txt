@@ -1,6 +1,6 @@
 scenario=chasing
 timeStep=0.01
-nTimeSteps=4000
+nTimeSteps=10000
 terrainType=flat
 terrainLength=3
 terrainWidth=3

@@ -1,8 +1,0 @@
-scenario=chasing
-timeStep=0.002
-nTimeSteps=4000
-terrainType=flat
-terrainLength=2
-terrainWidth=2
-obstaclesConfigFile=obstacles.txt
-startPositionConfigFile=startPos2.txt
