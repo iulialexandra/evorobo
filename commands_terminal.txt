@@ -1,0 +1,6 @@
+./robogen-file-viewer ./results/racing_brain/_1/GenerationBest-10000.json ./results/racing_brain/_1/conf.txt 
+
+./robogen-server 8001
+./robogen-server 8002
+
+./robogen-evolver 1 ./results/chasing_brain/ ./evolConf-full.txt 
