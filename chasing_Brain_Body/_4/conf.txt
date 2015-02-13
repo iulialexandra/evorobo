@@ -1,0 +1,9 @@
+scenario=chasing
+timeStep=0.01
+nTimeSteps=4000
+terrainType=flat
+terrainLength=6
+terrainWidth=2
+obstaclesConfigFile=obstacles_stairs.txt
+startPositionConfigFile=startPos.txt
+lightSourceHeight=0.55
